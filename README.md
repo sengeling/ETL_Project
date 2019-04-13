@@ -1,6 +1,6 @@
 # ETL_Project
 
 # TEAM MEMBERS
-C. Marshall Doig,
+Marshall Doig,
 Stephanie Engeling,
 Ashley McGee
