@@ -20,6 +20,11 @@ d. results.csv: The results for each driver in each race
 
 2. Original Data source 2 (FORMAT: CSV): Weather data is the Local Climatologcial Data from NOAA.gov - https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/quality-controlled-local-climatological-data-qclcd
 
+Two csvs with valid data requested from NOAA:
+
+a. austin_weather.csv: Hourly, daily, and monthly weather observations from the Austin-Bergstrom International Airport station between Nov. 1, 2012, and Oct. 31, 2018.
+b. indy_weather.csv: Hourly, daily, and monthly weather observations from the Indianapolis International Airport station between Sept. 1, 2000, and June 30, 2007.
+
 #FORMATTING NEEDED
 1. Race data:
 
@@ -28,6 +33,11 @@ b. Merge drivers and results csvs on driver id
 c. combine the two merged dataframes, drop unwanted columns, rename poorly named columns
 
 2. Weather data:
+
+a. Keep only rows that contained daily weather observation data (not hourly or monthly).
+b. Drop all columns that contain all null values, and then drop columns deemed unnecessary.
+c. Rename remaining columns, clean 'date' column so only month, date, and year remain.
+d. Loop through list of race dates and keep only rows of daily weather data that match those dates.
 
 # DATABASE TYPE
 
