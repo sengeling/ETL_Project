@@ -20,5 +20,5 @@ We will be pulling Formula 1 race data for the American Grand Prix and weather d
 
 # DATABASE TYPE
 
-SQL Database (Relational) - joined by city
+SQL Database (Relational) - joined by date
 
